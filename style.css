@@ -20,7 +20,7 @@ body {
 }
 
 .apresentacao{
-margin: 9% 15%;
+margin: 9.8% 15%;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -47,29 +47,46 @@ justify-content: space-between;
 
 .apresentacao__botao{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin: 0%;
+    align-items: center;
+    gap: 26px;
+}
+
+.apresentacao__botao__subtitulo{
+    font-family: 'Krona one',sans-serif;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .apresentacao__botao__links{
-    background-color: #F05048;
-    width: 280px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #000;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;   
+    border-radius: 10px;   
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #000;
+    color: #F6F6F6;
     font-family: "Montserrat",sans-serif;
     font-style:normal;
     font-weight: 600;
+    border: 2px solid #F05048;
+}
+
+/* Aplicado para mudar o estilo do botão quando o cursor tiver acima dele */
+.apresentacao__botao__links:hover{
+    background-color: #272727;
 }
 
 .redirecionamento{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    margin: 0;
 }
 
 .redirecionamento__botao{
@@ -80,10 +97,17 @@ justify-content: space-between;
     
 }
 
+.redirecionamento__botao__link{
+    font-family: "Montserrat",sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #F05048;
+}
+
 .assinatura{
     background-color: #F05048;
-    margin: -30px 0px ;
-    padding: 16.5px 0px;
+    margin: -20px 0px ;
+    padding: 11.5px 0px;
     display: flex;
     justify-content: center;
 }
@@ -93,5 +117,5 @@ justify-content: space-between;
     color: #000;
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
-    font-weight: 700;
 }
+
