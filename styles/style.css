@@ -131,7 +131,9 @@ gap: 82px;
     font-style: normal;
 }
 
-@media (max-width: 1200px){
+
+
+@media (max-width: 1200px) and (max-height:870px){
     
     .redirecionamento{
         padding: 15% 10%;
@@ -143,15 +145,15 @@ gap: 82px;
     
     .apresentacao{
         flex-direction: column-reverse;
-        padding: 5% 5%;
+        padding: 30% 5%;
     }
 
     .apresentacao__conteudo{
-        width: auto;
+        width: 100%;
     }
 }
 
-@media (min-width: 1201px) and (max-width: 1459px) {
+@media (min-width: 1201px) and (max-width: 1459px) and (max-height: 800px){
 
 
     .redirecionamento__botao{
@@ -163,7 +165,7 @@ gap: 82px;
     }
 
     .apresentacao__conteudo{
-        width: auto;
+        width: 100%;
     }
     
     .assinatura{
