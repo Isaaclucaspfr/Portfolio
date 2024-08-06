@@ -133,7 +133,7 @@ gap: 82px;
 
 
 
-@media (max-width: 1200px) and (max-height:870px){
+@media (max-width: 1200px){
     
     .redirecionamento{
         padding: 15% 10%;
@@ -149,34 +149,7 @@ gap: 82px;
     }
 
     .apresentacao__conteudo{
-        width: 100%;
-    }
-}
-
-@media (min-width: 1201px) and (max-width: 1459px) and (max-height: 800px){
-
-
-    .redirecionamento__botao{
-        justify-content: center;
-    }
-    
-    .apresentacao{
-        padding: 12% 5%;
-    }
-
-    .apresentacao__conteudo{
-        width: 100%;
-    }
-    
-    .assinatura{
-        padding: 3%;
-    }
-    
-}
-
-@media (min-width: 1460px) and (max-width: 1542px){
-    .assinatura{
-        padding: 2.5%;
+        width: auto;
     }
 }
 
