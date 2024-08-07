@@ -157,5 +157,10 @@ gap: 82px;
     .apresentacao__imagem{
         width: 300px;
     }
+
+    .apresentacao__conteudo__paragrafo{
+        width: auto;
+    }
+
 }
 
