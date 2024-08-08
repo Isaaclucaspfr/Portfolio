@@ -1,0 +1,9 @@
+const bgAnimacao = document.getElementById('bgAnimacao');
+
+const numberOfColorBoxes = 400;
+
+for (let i=0; i < numberOfColorBoxes ; i++) {
+    const colorBox = document.createElement('div');
+    colorBox.classList.add('colorBox');
+    bgAnimacao.append(colorBox)
+}

@@ -21,11 +21,13 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
+    transition: 1s;
 }
 
 
 .redirecionamento{
     padding: 2% 0% 0% 15%;
+    z-index: +1;
 }
 
 .redirecionamento__botao{
@@ -40,8 +42,15 @@ body {
     font-weight: 600;
     text-decoration: none;
     color: var(--cor-terciaria);
+    left: 50%;
+    margin-top: 1.5rem;
+    transition: 0.3s;
 }
 
+.redirecionamento__botao__link:hover{
+    color: #c7baba;
+    font-size: 1.8rem;
+}
 
 .titulodestaque {
     color: var(--cor-terciaria);
@@ -54,6 +63,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 gap: 82px;
+z-index: +1;
 }
 
 .apresentacao__conteudo{
@@ -131,6 +141,55 @@ gap: 82px;
     font-style: normal;
 }
 
+.bgAnimacao{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+   background: #000000; 
+    filter: saturate(2);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #000000;
+}
+
+.colorBox:hover{
+    background: #F05048;
+    transition-duration: 0s;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #F05048;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
 
 
 @media (max-width: 1200px){
