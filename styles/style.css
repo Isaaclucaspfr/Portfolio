@@ -32,7 +32,7 @@ body {
 
 .redirecionamento__botao{
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .redirecionamento__botao__link{
@@ -201,8 +201,13 @@ z-index: +1;
     
     .redirecionamento__botao{
         justify-content: center;
+        gap: 1.05rem;
     }
     
+    .redirecionamento__botao__link{
+        font-size: 1.2rem;
+    }
+
     .apresentacao{
         flex-direction: column-reverse;
         padding: 70% 5%;
