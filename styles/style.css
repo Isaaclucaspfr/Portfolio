@@ -234,5 +234,20 @@ z-index: +1;
         width: auto;
     }
 
+    .bgAnimacao{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: grid;
+        grid-template-columns: repeat(20,1fr);
+        grid-template-rows: repeat(20,1fr);
+       background: #000000; 
+        filter: saturate(2);
+        overflow: hidden;
+        z-index: -1;
+    }
+    
 }
 
